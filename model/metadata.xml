@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:DataServices m:DataServiceVersion="2.0"
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+        <Schema Namespace="Z_FLP_INPLACE_NAVIGATION_SRV" xml:lang="en" sap:schema-version="1"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+            xmlns:sap="http://www.sap.com/Protocols/SAPData">
+            <EntityType Name="WebApplication" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Application"/>
+                </Key>
+                <Property Name="Application" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Application FLP Support" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Scheme" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Scheme FLP Support" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Host" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Host FLP Support" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Domain" Type="Edm.String" Nullable="false" MaxLength="60" sap:label="Domain FLP Support" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Port" Type="Edm.Int32" Nullable="false" sap:label="Port FLP Support" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Path" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Path FLP Support" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Query" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Query FLP Support" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="Z_FLP_INPLACE_NAVIGATION_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="WebApplicationSet" EntityType="Z_FLP_INPLACE_NAVIGATION_SRV.WebApplication" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="./sap/Z_FLP_INPLACE_NAVIGATION_SRV/$metadata"
+                xmlns:atom="http://www.w3.org/2005/Atom"/>
+                <atom:link rel="latest-version" href="./sap/Z_FLP_INPLACE_NAVIGATION_SRV/$metadata"
+                    xmlns:atom="http://www.w3.org/2005/Atom"/>
+                </Schema>
+            </edmx:DataServices>
+        </edmx:Edmx>

@@ -1,0 +1,29 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="z_flp_inplace.controller.Inplace"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page showHeader="false" enableScrolling="false">
+				<content>
+					<core:HTML id="iframeContent" preferDOM="true"></core:HTML>                      
+					<!--<FlexBox width="100%" height="100%" justifyContent="Center" alignItems="Baseline">-->
+					<!--	<items>-->
+					<!--		<VBox id="dummyCont" width="100%" height="50px" direction="Column">-->
+					<!--			<items></items>-->
+					<!--		</VBox>-->
+					<!--	</items>-->
+					<!--</FlexBox>-->
+					<!--<FlexBox width="100%" height="100%" justifyContent="Center" alignItems="Baseline" direction="Column" >-->
+					<!--	<items>-->
+					<!--		<VBox id="iframeContent1" width="100%" height="1px" direction="Column" >-->
+					<!--			<items></items>-->
+					<!--		</VBox>-->
+					<!--		<VBox id="iframeContent" width="100%" height="100%" direction="Column" justifyContent="{sap.m.FlexJustifyContent.Center}">-->
+					<!--			<items></items>-->
+					<!--		</VBox>-->
+					<!--	</items>-->
+					<!--</FlexBox>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
